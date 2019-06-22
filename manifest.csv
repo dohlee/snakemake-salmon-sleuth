@@ -1,0 +1,7 @@
+name,library_layout,condition
+control1,single,control
+control2,single,control
+control3,single,control
+case1,single,case
+case2,single,case
+case3,single,case

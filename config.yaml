@@ -1,0 +1,72 @@
+manifest: '/data/project/dohoon/workbench/snakemake-salmon-sleuth/manifest.csv'
+data_dir: '/data/project/dohoon/workbench/data'
+result_dir: '/data/project/dohoon/workbench/result'
+reference:
+    name: 'GRCh38'
+    dir: '/data/project/dohoon/reference/GRCh38'
+    fasta: '/data/project/dohoon/reference/GRCh38/GRCh38.transcriptome.fa'
+    salmon_index: '/data/project/dohoon/reference/GRCh38/salmon_index'
+threads:
+    salmon_index: 8
+    salmon_quant_se: 18
+    salmon_quant_pe: 18
+salmon_index:
+    extra: ''
+    kmerLen: 31
+    gencode: False
+    keepDuplicates: False
+    perfectHash: False
+    decoys: False
+    type_: 'quasi'
+salmon_quant_se:
+    extra: ''
+    libType: 'A'
+    seqBias: False
+    gcBias: False
+    incompatPrior: False
+    geneMap: False
+    meta: False
+    discardOrphansQuasi: False
+    validateMappings: True  # Using 'validateMappings' option is recommended.
+    consensusSlack: False
+    minScoreFraction: False
+    maxMMPExtension: 7
+    ma: 2
+    mp: -4
+    go: 4
+    ge: 2
+    bandwidth: 15
+    allowDovetail: False
+    recoverOrphans: False
+    mimicBT2: False
+    mimicStrictBT2: False
+    hardFilter: False
+    writeMappings: False
+    consistentHits: False
+    numBootstraps: 36
+salmon_quant_pe:
+    extra: ''
+    libType: 'A'
+    seqBias: False
+    gcBias: False
+    incompatPrior: False
+    geneMap: False
+    meta: False
+    discardOrphansQuasi: False
+    validateMappings: True  # Using 'validateMappings' option is recommended.
+    consensusSlack: False
+    minScoreFraction: False
+    maxMMPExtension: 7
+    ma: 2
+    mp: -4
+    go: 4
+    ge: 2
+    bandwidth: 15
+    allowDovetail: False
+    recoverOrphans: False
+    mimicBT2: False
+    mimicStrictBT2: False
+    hardFilter: False
+    writeMappings: False
+    consistentHits: False
+    numBootstraps: 36

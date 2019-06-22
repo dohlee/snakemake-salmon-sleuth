@@ -1,0 +1,12 @@
+name: salmon-sleuth
+channels:
+    - conda-forge
+    - bioconda
+    - r
+    - defaults
+dependencies:
+    - snakemake
+    - salmon
+    - r-wasabi
+    - r-sleuth
+    - r-dplyr

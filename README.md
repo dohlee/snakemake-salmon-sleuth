@@ -1,0 +1,2 @@
+# snakemake-salmon-sleuth
+
