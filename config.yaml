@@ -1,6 +1,6 @@
-manifest: '/data/project/dohoon/workbench/snakemake-salmon-sleuth/manifest.csv'
-data_dir: '/data/project/dohoon/workbench/data'
-result_dir: '/data/project/dohoon/workbench/result'
+manifest: 'manifest.csv'
+data_dir: 'data'
+result_dir: 'result'
 reference:
     name: 'GRCh38'
     dir: '/data/project/dohoon/reference/GRCh38'
@@ -8,8 +8,8 @@ reference:
     salmon_index: '/data/project/dohoon/reference/GRCh38/salmon_index'
 threads:
     salmon_index: 8
-    salmon_quant_se: 18
-    salmon_quant_pe: 18
+    salmon_quant_se: 16
+    salmon_quant_pe: 16
 salmon_index:
     extra: ''
     kmerLen: 31
@@ -17,7 +17,7 @@ salmon_index:
     keepDuplicates: False
     perfectHash: False
     decoys: False
-    type_: 'quasi'
+    type_: 'puff'
 salmon_quant_se:
     extra: ''
     libType: 'A'

@@ -89,6 +89,10 @@ rule salmon_quant_se:
         # parts of the abundance estimation model that make less sense for metagenomic data.
         # Default: False
         meta = SQS['meta'],
+        # Number of bootstrap samples to generate.
+        # Note: This is mutually exclusive with Gibbs sampling.
+        # Default: False
+        numBootstraps = SQS['numBootstraps'],
         # NOTE: The rest of advanced options are omitted here.
         # so please refer to the documentation for whole options.x
     threads: config['threads']['salmon_quant_se']
@@ -144,6 +148,10 @@ rule salmon_quant_pe:
         # parts of the abundance estimation model that make less sense for metagenomic data.
         # Default: False
         meta = SQP['meta'],
+        # Number of bootstrap samples to generate.
+        # Note: This is mutually exclusive with Gibbs sampling.
+        # Default: False
+        numBootstraps = SQP['numBootstraps'],
         # NOTE: The rest of advanced options are omitted here.
         # so please refer to the documentation for whole options.x
     threads: config['threads']['salmon_quant_pe']

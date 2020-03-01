@@ -4,6 +4,9 @@ import pandas as pd
 configfile: 'config.yaml'
 manifest = pd.read_csv(config['manifest'])
 
+onsuccess: shell('')
+onerror: shell('')
+
 DATA_DIR = Path(config['data_dir'])
 RESULT_DIR = Path(config['result_dir'])
 

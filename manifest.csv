@@ -1,7 +1,7 @@
 name,library_layout,condition
-control1,single,control
-control2,single,control
-control3,single,control
-case1,single,case
-case2,single,case
-case3,single,case
+A1,paired,A
+A2,paired,A
+A3,paired,A
+B1,paired,B
+B2,paired,B
+B3,paired,B
