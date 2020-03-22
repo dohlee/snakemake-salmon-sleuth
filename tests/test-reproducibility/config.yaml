@@ -20,19 +20,55 @@ salmon_index:
     type_: 'puff'
 salmon_quant_se:
     # Using 'validatemappings' option is recommended.
-    extra: '--validateMappings --numBootstraps 36'
+    extra: ''
     libType: 'A'
     seqBias: False
     gcBias: False
     incompatPrior: False
     geneMap: False
     meta: False
+    discardOrphansQuasi: False
+    validateMappings: True
+    consensusSlack: False
+    minScoreFraction: False
+    maxMMPExtension: 7
+    ma: 2
+    mp: -4
+    go: 4
+    ge: 2
+    bandwidth: 15
+    allowDovetail: False
+    recoverOrphans: False
+    mimicBT2: False
+    mimicStrictBT2: False
+    hardFilter: False
+    writeMappings: False
+    consistentHits: False
+    numBootstraps: 36
 salmon_quant_pe:
     # Using 'validatemappings' option is recommended.
-    extra: '--validateMappings --numBootstraps 36'
+    extra: ''
     libType: 'A'
     seqBias: False
     gcBias: False
     incompatPrior: False
     geneMap: False
     meta: False
+    discardOrphansQuasi: False
+    validateMappings: True
+    consensusSlack: False
+    minScoreFraction: False
+    maxMMPExtension: 7
+    ma: 2
+    mp: -4
+    go: 4
+    ge: 2
+    bandwidth: 15
+    allowDovetail: False
+    recoverOrphans: False
+    mimicBT2: False
+    mimicStrictBT2: False
+    hardFilter: False
+    writeMappings: False
+    consistentHits: False
+    numBootstraps: 36
