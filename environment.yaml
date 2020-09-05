@@ -5,8 +5,14 @@ channels:
     - r
     - defaults
 dependencies:
-    - snakemake
+    - python=3.6
+    - pandas 
+
     - salmon
     - r-wasabi
     - r-sleuth
     - r-dplyr
+
+    - pip
+    - pip:
+        - snakemake==5.8.2
